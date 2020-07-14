@@ -136,17 +136,17 @@
     "tshirtSizeS": {
       "numberOfMasterInstances": 1,
       "numberOfSlavesInstances": 1,
-      "vmSize": "Standard_A2"
+      "vmSize": "Standard_F1s"
     },
     "tshirtSizeM": {
       "numberOfMasterInstances": 1,
       "numberOfSlavesInstances": 4,
-      "vmSize": "Standard_A4"
+      "vmSize": "Standard_B2s"
     },
     "tshirtSizeL": {
       "numberOfMasterInstances": 1,
       "numberOfSlavesInstances": 6,
-      "vmSize": "Standard_A7"
+      "vmSize": "Standard_DS1_v2"
     },
     "numberOfMasterInstances": "[variables(concat('tshirtSize', parameters('tshirtSize'))).numberOfMasterInstances]",
     "numberOfSlavesInstances": "[variables(concat('tshirtSize', parameters('tshirtSize'))).numberOfSlavesInstances]",
